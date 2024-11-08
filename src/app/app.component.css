@@ -1,0 +1,18 @@
+/* Asegura que el contenedor principal tenga al menos la altura de la ventana */
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* El contenido principal (router-outlet) puede expandirse */
+  router-outlet {
+    flex-grow: 1;
+  }
+  
+  /* Footer permanece en la parte inferior */
+  footer {
+    margin-top: auto;
+    background-color: #add8e6; /* Esto empuja el footer hacia abajo */
+  }
+  
